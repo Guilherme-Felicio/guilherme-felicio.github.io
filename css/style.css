@@ -1,0 +1,163 @@
+* {
+    font-family: 'Domine', serif;
+    color:#111;
+}
+
+body{
+    background: url(../img/bg.webp) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 36px;
+
+}
+
+p{
+    font-size: 24px;
+    text-indent: 40px;
+}
+
+nav{
+    background: #F5CB5C;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #111 ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #eee
+}
+
+.pergaminho{
+    background: url(../img/pergaminho.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.60));
+    margin-bottom: 6rem;
+}
+
+.nivel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nivel p{
+    text-indent: 0;
+}
+
+.habilidades:last-child{
+    margin-bottom: 40px ;
+}
+
+.habilidade{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.habilidade img{
+    margin-left: 3px;
+}
+
+.grafico{
+    padding: 8px 1vw 12px;
+    border-radius: 4px;
+    margin-left: .5rem;
+}
+
+.html5{
+    background: #E44F26;
+    max-height: 50px;
+}
+
+.css3{
+    background: #35A8DB;
+}
+
+.js{
+    background: #F5DE19;
+}
+
+.wordpress{
+    background: #01579B;
+}
+
+.docker{
+    background: #1D7D93;
+}
+
+.bootstrap{
+    background: #563D7C;
+}
+
+@media screen and (max-width: 991px) {
+   
+    h1{
+        font-size: 24px;
+    }
+
+    p, a{
+        font-size: 18px;
+    }
+
+    ul.habilidades{
+        padding-left: 0;
+    }
+    li img{
+        max-height: 40px;
+    }
+
+    
+  }
+
+@media screen and (max-width: 576px) {
+   
+    li img{
+        max-height: 35px;
+    }
+  }
+
+  
+@media screen and (max-width: 470px) {
+    h1{
+        font-size: 18px;
+    }
+
+    p, a{
+        font-size: 14px;
+    }
+
+    li img{
+        max-height: 30px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+   .nivel p{
+       font-size: 12px;
+   }
+
+    li img{
+        max-height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .nivel p{
+        font-size: 10px;
+    }
+ 
+     li img{
+         max-height: 20px;
+     }
+ 
+ }
