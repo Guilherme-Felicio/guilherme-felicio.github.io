@@ -98,6 +98,13 @@ nav{
     background: #563D7C;
 }
 
+.barco{
+    margin-top: 28vh;
+    position: fixed;
+    max-width: 20vw;
+    height: auto;
+}
+
 @media screen and (max-width: 991px) {
    
     h1{
@@ -114,8 +121,6 @@ nav{
     li img{
         max-height: 40px;
     }
-
-    
   }
 
 @media screen and (max-width: 576px) {

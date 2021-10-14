@@ -1,4 +1,5 @@
 let graficos = document.querySelectorAll(".grafico");
+const barco = document.querySelector(".barco");
 const small = window.matchMedia("(min-width: 576px)").matches
 const md = window.matchMedia("(min-width: 766px)").matches 
 const lg = window.matchMedia("(min-width: 991px)").matches 
@@ -6,8 +7,7 @@ const xl = window.matchMedia("(min-width: 1199px)").matches
 const xxl = window.matchMedia("(min-width: 1399px)").matches 
 
 window.addEventListener('scroll', (e)=>{
-    console.log(window.pageYOffset );
-
+    barco.style.marginLeft = window.pageYOffset/1.5 + "px";
 
     if(xl){
         if(window.pageYOffset > 650){
