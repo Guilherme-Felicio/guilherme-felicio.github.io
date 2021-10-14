@@ -35,7 +35,7 @@ nav{
 }
 
 .pergaminho{
-    background: url(../img/pergaminho.jpg) no-repeat;
+    background: url(../img/pergaminho.webp) no-repeat;
     background-size: cover;
     border-radius: 6px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.60));
