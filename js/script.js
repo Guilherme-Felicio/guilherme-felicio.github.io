@@ -43,7 +43,6 @@ window.addEventListener('scroll', (e)=>{
         }
     } 
 
-
     else if(md){
         if(window.pageYOffset > 800){
             graficos[0].style.paddingRight = "60%";
@@ -89,7 +88,7 @@ window.addEventListener('scroll', (e)=>{
             graficos[4].style.paddingRight = "22%";
             graficos[4].style.transition = "1.9s";
             graficos[5].style.paddingRight = "22%";
-            graficos[5].style.transition = "2s";
+            graficos[5].style.transition = "1.99s";
         }
     }
 });
