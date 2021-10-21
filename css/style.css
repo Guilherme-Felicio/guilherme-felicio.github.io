@@ -1,13 +1,13 @@
 * {
     font-family: 'Domine', serif;
     color:#111;
+    scroll-behavior: smooth;
 }
 
 body{
     background: url(../img/bg.webp) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
 }
 
 h1{
