@@ -14,13 +14,13 @@ body{
 
 h1{
     font-size: 36px;
-    color:black;
+    color:#111;
 }
 
 p{
     font-size: 24px;
     text-indent: 40px;
-    color:black;
+    color:#111;
 }
 
 nav{
