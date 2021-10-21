@@ -25,6 +25,10 @@ nav{
     background: #F5CB5C;
 }
 
+li{
+    list-style: none;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #111 ;
     font-size: 18px;
@@ -107,6 +111,10 @@ nav{
     height: auto;
 }
 
+.projetos li img{
+    max-width: 100%;
+    height: auto;
+}
 
 @media screen and (min-width: 1900px) {
     .barco{
