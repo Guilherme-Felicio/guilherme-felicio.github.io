@@ -8,16 +8,19 @@ body{
     background: url(../img/bg.webp) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100%;
+    background-position: center;
 }
 
 h1{
     font-size: 36px;
-
+    color:black;
 }
 
 p{
     font-size: 24px;
     text-indent: 40px;
+    color:black;
 }
 
 nav{
