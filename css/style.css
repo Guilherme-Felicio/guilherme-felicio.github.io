@@ -6,7 +6,8 @@
 
 body{
     background: url(../img/bg.webp) no-repeat center fixed;
-     background-size: fill;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
 }
 
 h1{
