@@ -6,7 +6,7 @@
 
 .bg{
     background: url(../img/bg.webp) no-repeat center fixed;
-    background-size: cover;
+    background-size: fill;
     height: 100vh;
 }
 
