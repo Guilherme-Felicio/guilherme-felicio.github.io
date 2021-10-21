@@ -6,10 +6,7 @@
 
 body{
     background: url(../img/bg.webp) no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
+     background-size: fill;
 }
 
 h1{
