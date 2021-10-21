@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 
-body{
+.bg{
     background: url(../img/bg.webp) no-repeat;
     background-size: cover;
     background-attachment: fixed;
