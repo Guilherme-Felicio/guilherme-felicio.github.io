@@ -99,10 +99,19 @@ nav{
 }
 
 .barco{
-    margin-top: 28vh;
+    margin-top: 40vh;
     position: fixed;
-    max-width: 20vw;
+    width: 20vw;
+    max-width: 15rem;
     height: auto;
+}
+
+
+@media screen and (min-width: 1900px) {
+    .barco{
+        margin-top: 43vh;
+    }
+    
 }
 
 @media screen and (max-width: 991px) {
@@ -122,6 +131,7 @@ nav{
         max-height: 40px;
     }
   }
+
 
 @media screen and (max-width: 576px) {
    

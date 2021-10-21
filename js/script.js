@@ -5,10 +5,31 @@ const md = window.matchMedia("(min-width: 766px)").matches
 const lg = window.matchMedia("(min-width: 991px)").matches 
 const xl = window.matchMedia("(min-width: 1199px)").matches 
 const xxl = window.matchMedia("(min-width: 1399px)").matches 
+let barcoX = 0;
 
 window.addEventListener('scroll', (e)=>{
-    barco.style.marginLeft = window.pageYOffset/1.5 + "px";
+    movimentarBarco();
+    animarGrafico(graficos);
+});
 
+function movimentarBarco(){
+    if(screen.width <= 1500){
+        barcoX += screen.width/50;
+        barco.style.marginLeft = barcoX + "px";
+
+        if(barcoX > screen.width){
+            barcoX = -150;
+        }
+    }else{
+        barcoX += screen.width/90;
+        barco.style.marginLeft = barcoX + "px";
+        if(barcoX > screen.width){
+            barcoX = -100;
+        }
+    }
+}
+
+function animarGrafico(graficos){
     if(xl){
         if(window.pageYOffset > 650){
             graficos[0].style.paddingRight = "60%";
@@ -91,4 +112,4 @@ window.addEventListener('scroll', (e)=>{
             graficos[5].style.transition = "1.99s";
         }
     }
-});
+}
