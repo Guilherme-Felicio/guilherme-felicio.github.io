@@ -8,8 +8,8 @@ const xl = window.matchMedia("(min-width: 1199px)").matches
 const xxl = window.matchMedia("(min-width: 1399px)").matches 
 let barcoX = 0;
 
-bg.style.height = window.height + "px";
 
+window.resizeTo(window.width, window.height);
 window.addEventListener('scroll', (e)=>{
     movimentarBarco();
     animarGrafico(graficos);
