@@ -4,9 +4,10 @@
     scroll-behavior: smooth;
 }
 
-.bg{
-    background: url(../img/bg.webp) no-repeat center fixed;
-    background-size: fill;
+body{
+    background: url(../img/bg.webp) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
