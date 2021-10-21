@@ -1,6 +1,6 @@
 let graficos = document.querySelectorAll(".grafico");
 const barco = document.querySelector(".barco");
-const bg = document.querySelector("#bg");
+
 const small = window.matchMedia("(min-width: 576px)").matches
 const md = window.matchMedia("(min-width: 766px)").matches 
 const lg = window.matchMedia("(min-width: 991px)").matches 
@@ -9,7 +9,7 @@ const xxl = window.matchMedia("(min-width: 1399px)").matches
 let barcoX = 0;
 
 
-window.resizeTo(window.width, window.height);
+
 window.addEventListener('scroll', (e)=>{
     movimentarBarco();
     animarGrafico(graficos);
