@@ -4,13 +4,12 @@
     scroll-behavior: smooth;
 }
 
-html{
-    background: url(../img/bg.webp) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    background-position: center;
+body{
+    background: url(../img/bg.webp) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
 }
 
 h1{
