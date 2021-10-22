@@ -12,15 +12,17 @@ body{
 
 h1{
     font-size: 36px;
+    font-weight: bold;
 }
 
 h2{
     font-size: 30px;
+    font-weight: bold;
 }
 
 p{
     font-size: 24px;
-    text-indent: 40px;
+    text-indent: 30px;
 }
 
 nav{
@@ -109,20 +111,25 @@ li{
     max-width: 15rem;
     height: auto;
 }
-.projeto ul li::before{
-    content: "a";
-    width: 100%;
-    height: 2px;
-    color: #111;
-}
+
 .projetos li img{
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.20));
+    height: auto;
 }
 
-.projetos ul li .btn{
+.projetos .call-to-action{
+    text-indent: 0px;
+}
+
+.projetos li .btn{
     background-color: #F5CB5C;
     font-weight: bold;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.20));
+    margin-bottom: 40px;
+}
+
+.projetos li p:last-of-type{
+    text-indent: 0;
 }
 
 @media screen and (min-width: 1900px) {
@@ -136,8 +143,10 @@ li{
     h1{
         font-size: 24px;
     }
-
-    p, a{
+    h2{
+        font-size: 20px;
+    }
+    p, a, span{
         font-size: 18px;
     }
 
@@ -147,12 +156,14 @@ li{
     .habilidades li img{
         max-height: 40px;
     }
+    
+
   }
 
 
 @media screen and (max-width: 576px) {
    
-    li img{
+    .habilidades li img{
         max-height: 35px;
     }
   }
@@ -163,32 +174,36 @@ li{
         font-size: 18px;
     }
 
-    p, a{
+    h2{
+        font-size: 16px;
+    }
+
+    p, a, span{
         font-size: 14px;
     }
 
-    li img{
+    .habilidades li img{
         max-height: 30px;
     }
 }
 
 @media screen and (max-width: 390px) {
-   .nivel p{
+    .nivel span{
        font-size: 12px;
-   }
+    }
 
-    li img{
+    .habilidades li img{
         max-height: 25px;
     }
 
 }
 
 @media screen and (max-width: 330px) {
-    .nivel p{
+    .nivel span{
         font-size: 10px;
     }
  
-     li img{
+    .habilidades li img{
          max-height: 20px;
      }
  
