@@ -12,13 +12,15 @@ body{
 
 h1{
     font-size: 36px;
-    color:#111;
+}
+
+h2{
+    font-size: 30px;
 }
 
 p{
     font-size: 24px;
     text-indent: 40px;
-    color:#111;
 }
 
 nav{
@@ -29,14 +31,15 @@ li{
     list-style: none;
 }
 
+.navbar-light .navbar-nav .nav-link:hover,
+.btn:hover{
+    color: #eee
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #111 ;
     font-size: 18px;
     font-weight: bold;
-}
-
-.navbar-light .navbar-nav .nav-link:hover{
-    color: #eee
 }
 
 .pergaminho{
@@ -53,10 +56,6 @@ li{
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-}
-
-.nivel p{
-    text-indent: 0;
 }
 
 .habilidades:last-child{
@@ -110,17 +109,26 @@ li{
     max-width: 15rem;
     height: auto;
 }
-
+.projeto ul li::before{
+    content: "a";
+    width: 100%;
+    height: 2px;
+    color: #111;
+}
 .projetos li img{
-    max-width: 100%;
-    height: auto;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.20));
+}
+
+.projetos ul li .btn{
+    background-color: #F5CB5C;
+    font-weight: bold;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.20));
 }
 
 @media screen and (min-width: 1900px) {
     .barco{
         margin-top: 43vh;
     }
-    
 }
 
 @media screen and (max-width: 991px) {
@@ -136,7 +144,7 @@ li{
     ul.habilidades{
         padding-left: 0;
     }
-    li img{
+    .habilidades li img{
         max-height: 40px;
     }
   }
