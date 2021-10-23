@@ -1,19 +1,38 @@
-let graficos = document.querySelectorAll(".grafico");
 const barco = document.querySelector(".barco");
+let barcoX = 0;
 
+// carrossel
+const setaEsquerda = document.querySelectorAll(".setaEsq");
+const setaDireita = document.querySelectorAll(".setaDir");
+const projetos = document.querySelectorAll(".projeto");
+let projetoAtivo = 0;
+
+// grafico
+const graficos = document.querySelectorAll(".grafico");
 const small = window.matchMedia("(min-width: 576px)").matches
 const md = window.matchMedia("(min-width: 766px)").matches 
 const lg = window.matchMedia("(min-width: 991px)").matches 
 const xl = window.matchMedia("(min-width: 1199px)").matches 
 const xxl = window.matchMedia("(min-width: 1399px)").matches 
-let barcoX = 0;
 
-
+console.log(setaEsquerda);
 
 window.addEventListener('scroll', (e)=>{
     movimentarBarco();
     animarGrafico(graficos);
 });
+
+setaDireita.forEach((seta) => {
+    seta.addEventListener('click', (e) => {
+        trocarProjeto('direita');
+    });
+});   
+
+setaEsquerda.forEach((seta) => {
+    seta.addEventListener('click', (e) => {
+        trocarProjeto('esquerda');
+    });
+});   
 
 function movimentarBarco(){
     if(screen.width <= 1500){
@@ -117,3 +136,42 @@ function animarGrafico(graficos){
     }
 }
 
+function trocarProjeto(direcao){
+    if(direcao == 'direita'){
+        for(let i = 0; i < projetos.length; i++){
+            if(i == projetoAtivo && i != projetos.length-1){
+                projetos[projetoAtivo].classList.remove('active');
+                projetos[projetoAtivo + 1].classList.add('active');
+                projetoAtivo = i+1;
+                break;
+            }
+            else if(i == projetoAtivo && i == projetos.length-1){
+                projetos[projetoAtivo].classList.remove('active');
+                projetos[0].classList.add('active');
+                projetoAtivo = 0;
+                break;
+            }
+        }
+    }
+
+    else{
+        console.log(projetoAtivo);
+        for(let i = (projetos.length - 1); i >=  0; i--){
+            console.log('hello');
+            if(i == projetoAtivo && i != 0){
+                projetos[projetoAtivo].classList.remove('active');
+                projetos[projetoAtivo - 1].classList.add('active');
+                projetoAtivo = i-1;
+                break;
+            }
+            else if(i == projetoAtivo && i == 0){
+                
+                projetos[projetoAtivo].classList.remove('active');
+                projetos[projetos.length - 1].classList.add('active');
+                projetoAtivo = projetos.length - 1;
+                break;
+            }
+        }
+    }
+  
+}
