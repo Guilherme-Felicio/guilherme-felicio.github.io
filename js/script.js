@@ -15,7 +15,6 @@ const lg = window.matchMedia("(min-width: 991px)").matches
 const xl = window.matchMedia("(min-width: 1199px)").matches 
 const xxl = window.matchMedia("(min-width: 1399px)").matches 
 
-console.log(setaEsquerda);
 
 window.addEventListener('scroll', (e)=>{
     movimentarBarco();
