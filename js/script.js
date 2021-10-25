@@ -34,19 +34,10 @@ setaEsquerda.forEach((seta) => {
 });   
 
 function movimentarBarco(){
-    if(screen.width <= 1500){
-        barcoX += screen.width/50;
-        barco.style.marginLeft = barcoX + "px";
-
-        if(barcoX > screen.width){
-            barcoX = -150;
-        }
-    }else{
-        barcoX += screen.width/90;
-        barco.style.marginLeft = barcoX + "px";
-        if(barcoX > screen.width){
-            barcoX = -100;
-        }
+    barcoX += screen.width/90;
+    barco.style.marginLeft = barcoX + "px";
+    if(barcoX > screen.width){
+        barcoX = -100;
     }
 }
 
@@ -154,9 +145,7 @@ function trocarProjeto(direcao){
     }
 
     else{
-        console.log(projetoAtivo);
         for(let i = (projetos.length - 1); i >=  0; i--){
-            console.log('hello');
             if(i == projetoAtivo && i != 0){
                 projetos[projetoAtivo].classList.remove('active');
                 projetos[projetoAtivo - 1].classList.add('active');
