@@ -19,8 +19,8 @@
     background: url(../assets/img/bg.webp) no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100vh;
 }
 
 h1{
@@ -183,6 +183,10 @@ img {
 }
 .carrossel span:nth-of-type(1){
     text-align: right;
+}
+
+.contato .p-0 li {
+    display: flex;
 }
 
 @media screen and (min-width: 1900px) {
