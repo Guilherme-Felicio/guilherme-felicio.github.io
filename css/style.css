@@ -74,7 +74,7 @@ img {
 }
 
 .pergaminho:nth-of-type(1){
-    margin-top: 8%;
+    margin-top: 15vh;
 }
 
 .habilidades .nivel{
@@ -259,7 +259,7 @@ img {
     .nivel span{
         font-size: 10px;
     }
- 
+
     .habilidades li img{
          max-height: 20px;
      }
