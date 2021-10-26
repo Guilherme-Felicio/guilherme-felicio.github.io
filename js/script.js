@@ -34,19 +34,18 @@ setaEsquerda.forEach((seta) => {
 });   
 
 function movimentarBarco(){
-    if(md){
-        barcoX += screen.width/80;
-        barco.style.marginLeft = barcoX + "px";
-        if(barcoX > screen.width){
-            barcoX = -100;
-        }
+    if(lg){
+        barcoX += screen.width/120;
+    } else if(md){
+        barcoX += screen.width/90;
     }else{
-        barcoX += screen.width/40;
-        barco.style.marginLeft = barcoX + "px";
-        if(barcoX > screen.width){
-            barcoX = -100;
-        }
+        barcoX += screen.width/40;   
     }
+    barco.style.marginLeft = barcoX + "px";
+    if(barcoX > screen.width){
+        barcoX = -100;
+    }
+    
     
 }
 
