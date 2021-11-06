@@ -55,7 +55,8 @@ img {
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
-.btn:hover{
+.btn:hover,
+.carrossel span:hover{
     color: #eee
 }
 
@@ -178,16 +179,31 @@ img {
     width: 10%;
 }
 
-.carrossel span:hover{
-    fill: #eee;
-}
 .carrossel span:nth-of-type(1){
     text-align: right;
 }
 
-.contato .p-0 li {
+.contato li {
     display: flex;
 }
+
+.contato ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contato ul li p{
+    text-indent: 0;
+    margin: 0 0 0 5px;
+}
+
+.contato ul li a p:hover{
+    text-decoration: none;
+    color: #eee;
+}
+
+
 
 
 
